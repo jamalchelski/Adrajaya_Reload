@@ -45,9 +45,9 @@
                     <ul class="navbar-nav ml-auto">
                         <!-- Authentication Links -->
                         @guest
-                            <li class="nav-item">
+                            {{-- <li class="nav-item">
                                 <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-                            </li>
+                            </li> --}}
                             @if (Route::has('register'))
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ route('register') }}">Daftar</a>
@@ -90,7 +90,7 @@
                     <a class="text-dark mr-5 mt-2 tbl {{ Request::is('produk') ? 'border border-info rounded-pill px-2  ' : ''}} " href="{{ route('product') }}">Produk Kami</a>
                 </div>
                 <div class="p-2 bd-highlight ">
-                    <a class="text-dark mr-5 mt-2 tbl {{ Request::is('home') ? 'border border-info rounded-pill px-2  ' : ''}}" href="{{ route('home') }}">Beranda</a>
+                    <a class="text-dark mr-5 mt-2 tbl {{ Request::is('landing') ? 'border border-info rounded-pill px-2  ' : ''}}" href="{{ route('landing') }}">Beranda</a>
                 </div>
             </div>
         </div>
