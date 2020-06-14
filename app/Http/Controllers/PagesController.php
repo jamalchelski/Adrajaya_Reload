@@ -34,7 +34,7 @@ class PagesController extends Controller
     }
     public function pendaftaran()
     {
-        return view('pendaftaran');
+        return view('auth/register');
     }
     public function pesan()
     {
@@ -45,16 +45,6 @@ class PagesController extends Controller
         //
     }
 
-
-
-    // public function create()
-    // {
-    //     return advice::create([
-    //         'nama' => $data['email'],
-    //         'nama' => $data['nama'],
-    //         'nama' => $data['pesan']
-    //     ]);
-    // }
 
 }
 

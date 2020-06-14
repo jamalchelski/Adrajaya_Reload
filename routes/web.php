@@ -23,7 +23,7 @@ Route::get('/produk', 'PagesController@produk')->name('product');
 Route::get('/kontak', 'PagesController@kontak')->name('kontak');
 Route::get('/tentang', 'PagesController@tentang')->name('about');
 Route::get('/artikel', 'PagesController@artikel')->name('artikel');
-Route::get('/pendaftaran', 'PagesController@pendaftaran')->name('pendaftar');
+Route::get('/register', 'PagesController@pendaftaran')->name('register');
 Route::get('/pesan', 'pesanController@index')->name('pesan');
 Route::post('/pesan', 'pesanController@store');
 
